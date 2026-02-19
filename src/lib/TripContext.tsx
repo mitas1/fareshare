@@ -177,7 +177,7 @@ export function TripProvider({ children }: { children: React.ReactNode }) {
 }
 
 export function useTrip() {
-  const ctx = useContext(TripContext);
-  if (!ctx) throw new Error("useTrip must be used within TripProvider");
-  return ctx;
+  const context = useContext(TripContext);
+  if (!context) throw new Error("useTrip must be used within TripProvider");
+  return context;
 }
