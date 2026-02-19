@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen">
@@ -17,13 +19,13 @@ export default function LandingPage() {
           Track expenses, split them fairly, and settle up with the fewest
           transactions possible. Built for group trips, roommates, and friends.
         </p>
-        <a
+        <Link
           href="/trip"
           className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[var(--color-primary-dark)] shadow-lg shadow-[var(--color-primary)]/25 hover:shadow-xl hover:shadow-[var(--color-primary)]/30 active:scale-[0.98]"
         >
           Start a Trip
           <span>→</span>
-        </a>
+        </Link>
       </section>
 
       {/* How It Works */}
@@ -127,13 +129,13 @@ export default function LandingPage() {
           <p className="text-white/80 text-lg mb-8 max-w-lg mx-auto">
             Start tracking your trip expenses now — it takes 30 seconds.
           </p>
-          <a
+          <Link
             href="/trip"
             className="inline-flex items-center gap-2 bg-white text-[var(--color-primary)] px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/90 shadow-lg active:scale-[0.98]"
           >
             Start a Trip — it&apos;s free
             <span>→</span>
-          </a>
+          </Link>
         </div>
       </section>
 
